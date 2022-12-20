@@ -8,6 +8,26 @@ package com.mycompany.appbangundatar;
  *
  * @author DARARI
  */
-public class BangunDatar {
-    
+abstract class BangunDatar {
+
+    private String namaBangunDatar;
+
+    public BangunDatar() {
+    }
+
+    public BangunDatar(String namaBangunDatar) {
+        this.namaBangunDatar = namaBangunDatar;
+    }
+
+    public void setNamaBangunDatar(String namaBangunDatar) {
+        this.namaBangunDatar = namaBangunDatar;
+    }
+
+    public String getNamaBangunDatar() {
+        return namaBangunDatar;
+    }
+
+    abstract double luas();
+
+    abstract double keliling();
 }
